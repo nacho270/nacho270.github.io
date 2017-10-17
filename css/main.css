@@ -1,22 +1,40 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 
+div.tagContainer {
+    height: 40px;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.tagContainer ul.tags {
+    right: 0;
+    top: 0;
+}
 
+.tagContainer ul.tags>li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 1px;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    background: #8899a6;
+    color: white;
+    border-radius: 0.2em;
+}
 
+.tagContainer ul.tags>li.dev {
+    background: #9266cc;
+}
 
+.tagContainer ul.tags>li.foot {
+    background: #3960e2;
+}
 
+.tagContainer ul.tags>li.rock {
+    background: #550505;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.tagContainer ul.tags>li.cook {
+    background: #ffcc4d;
+}
