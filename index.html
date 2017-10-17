@@ -12,10 +12,19 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <p class="links">
+            <a href="https://github.com/nacho270/" target="_blank" role="button" class="noHover"> <img alt="github" title="gitbhub" src="img/github.svg" />
+            </a>
+            <a href="https://www.linkedin.com/in/icicero/" target="_blank" role="button" class="noHover"> <img alt="twitter" title="twitter" src="img/linkedin.png" />
+            </a>
+            <a href="#" role="button"> <img alt="twitter" title="twitter" src="img/twitter.png" class="noHover" />
+            </a>
+        </p>
     </nav>
 
     <div class="jumbotron">
@@ -30,18 +39,10 @@
                     <li class="rock">Rock</li>
                 </ul>
             </div>
-            <p>
-                <a href="https://github.com/nacho270/" target="_blank" role="button"> <img alt="github" title="gitbhub" src="img/github.svg" />
-                </a>
-                <a href="https://www.linkedin.com/in/icicero/" target="_blank" role="button"> <img alt="twitter" title="twitter" src="img/linkedin.png" />
-                </a>
-                <a href="#" role="button"> <img alt="twitter" title="twitter" src="img/twitter.png" />
-                </a>
-            </p>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" ng-app="contents"  ng-controller="contentsController">
         <div class="row">
             <div class="col-md-4">
                 <h2>Heading</h2>

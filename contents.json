@@ -1,0 +1,12 @@
+[
+    {
+        "title":"Titulo 1",
+        "body":"body 1",
+        "link":"http://www.gogle.com.ar"
+    },
+    {
+        "title":"Titulo 2",
+        "body":"body 2",
+        "link":"http://www.gogle.com.ar"
+    }
+]

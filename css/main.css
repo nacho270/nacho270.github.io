@@ -3,13 +3,24 @@ body {
     padding-bottom: 20px;
 }
 
+a:hover.noHover,
+a:focus.noHover {
+    text-decoration: none;
+}
+
 div.tagContainer {
     height: 40px;
+}
+
+.navbar p.links img {
+    width: 32px;
+    height: 32px;
 }
 
 .tagContainer ul.tags {
     right: 0;
     top: 0;
+    padding: 0px;
 }
 
 .tagContainer ul.tags>li {
