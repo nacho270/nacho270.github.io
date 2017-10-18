@@ -12,6 +12,10 @@ div.tagContainer {
     height: 40px;
 }
 
+.navbar p.links {
+    padding: 10px;
+}
+
 .navbar p.links img {
     width: 32px;
     height: 32px;
