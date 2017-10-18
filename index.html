@@ -12,10 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 
 <body>
@@ -45,14 +42,26 @@
         </div>
     </div>
 
-    <div class="container" id="content">
+    <div class="container" ng-app="contents" ng-controller="contentsController">
+        <div class="row">
+            <div class="col-md-4" ng-repeat="e in entries">
+                <h2>{{e.title}}</h2>
+                <p>{{e.body}}</p>
+                <p><a class="btn btn-default" href="{{e.link}}" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; 2017 Ignacio Cicero
+                <p>
+        </footer>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script type="text/babel" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
