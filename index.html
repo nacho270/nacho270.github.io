@@ -10,9 +10,11 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,46 +24,67 @@
             </a>
             <a href="https://www.linkedin.com/in/icicero/" target="_blank" role="button" class="noHover"> <img alt="twitter" title="twitter" src="img/linkedin.png" />
             </a>
-            <a href="#" role="button"> <img alt="twitter" title="twitter" src="img/twitter.png" class="noHover" />
+            <a href="https://twitter.com/ignaciocicero" target="_blank" role="button"> <img alt="twitter" title="twitter" src="img/twitter.png" class="noHover" />
             </a>
         </p>
     </nav>
 
-    <div class="jumbotron">
+    <div class="scrollable-section" data-section-title="Home">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Hello world!</h1>
+                <p>I'm Ignacio Cicero and this is my personal website where i'll be sharing the things i work with, interests and CV.</p>
+                <div class="tagContainer">
+                    <ul class="tags">
+                        <li class="dev">Programming</li>
+                        <li class="cook">Cooking</li>
+                        <li class="foot">Football</li>
+                        <li class="rock">Rock</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="app" ng-app="contents" ng-controller="contentsController">
+        <div class="scrollable-section" data-section-title="News">
+            <div class="container">
+                <h1 class="sectionTitle">News</h1>
+                <div class="row">
+                    <div class="col-md-4" ng-repeat="e in entries">
+                        <h2>{{e.title}}</h2>
+                        <p>{{e.body}}</p>
+                        <p><a class="btn btn-default" href="{{e.link}}" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="scrollable-section" data-section-title="Resume">
+            <div class="container">
+                <h1 class="sectionTitle">Resume</h1>
+                <div class="row noMarginLeft" ng-repeat="e in cv">
+                    <h4 class="jobTitle">{{e.title}}</h4>
+                    <p>{{e.body}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
         <div class="container">
-            <h1>Hello world!</h1>
-            <p>I'm Ignacio Cicero and this is my personal website where i'll be sharing the things i work with, interests and CV.</p>
-            <div class="tagContainer">
-                <ul class="tags">
-                    <li class="dev">Programming</li>
-                    <li class="cook">Cooking</li>
-                    <li class="foot">Football</li>
-                    <li class="rock">Rock</li>
-                </ul>
-            </div>
+            <p>&copy; 2017 Ignacio Cicero</p>
         </div>
-    </div>
+    </footer>
 
-    <div class="container" ng-app="contents" ng-controller="contentsController">
-        <div class="row">
-            <div class="col-md-4" ng-repeat="e in entries">
-                <h2>{{e.title}}</h2>
-                <p>{{e.body}}</p>
-                <p><a class="btn btn-default" href="{{e.link}}" role="button">View details &raquo;</a></p>
-            </div>
-        </div>
-        <hr />
-        <footer>
-            <p>&copy; 2017 Ignacio Cicero
-                <p>
-        </footer>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-    </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/vendor/jquery.section-scroll.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').sectionScroll({
+                topOffset: 80
+            });
+        })
+    </script>
 </body>
 
 </html>

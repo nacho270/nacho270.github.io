@@ -53,3 +53,16 @@ div.tagContainer {
 .tagContainer ul.tags>li.cook {
     background: #ffcc4d;
 }
+
+.noMarginLeft {
+    margin-left: 0px !important;
+}
+
+.sectionTitle {
+    border-bottom: 6px solid #eee;
+    display: inline-block;
+}
+
+.jobTitle {
+    color: #aaaaaa
+}
