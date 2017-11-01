@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.4/angular-sanitize.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 
@@ -51,8 +52,8 @@
                 <h1 class="sectionTitle">News</h1>
                 <div class="row">
                     <div class="col-md-4" ng-repeat="e in entries">
-                        <h2>{{e.title}}</h2>
-                        <p>{{e.body}}</p>
+                        <h2 ng-bind-html="e.title"></h2>
+                        <p ng-bind-html="e.body"></p>
                         <p><a class="btn btn-default" href="{{e.link}}" role="button">View details &raquo;</a></p>
                     </div>
                 </div>
@@ -64,8 +65,8 @@
             <div class="container">
                 <h1 class="sectionTitle">Resume</h1>
                 <div class="row noMarginLeft" ng-repeat="e in cv">
-                    <h4 class="jobTitle">{{e.title}}</h4>
-                    <p>{{e.body}}</p>
+                    <h4 class="jobTitle" ng-bind-html="e.title"></h4>
+                    <p ng-bind-html="e.body"></p>
                 </div>
                 <hr />
             </div>

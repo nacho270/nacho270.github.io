@@ -1,9 +1,10 @@
-var app = angular.module("contents",  []);
+var app = angular.module("contents",  ['ngSanitize']);
 app.controller("contentsController", function($scope, $http) {
-    $http.get("contents.json").then(function(response) {
+    let rand = new Date().getTime();
+    $http.get(`contents.json?r=${rand}`).then(function(response) {
         $scope.entries = response.data;
     });
-    $http.get("cv.json").then(function(response) {
+    $http.get(`cv.json?r=${rand}`).then(function(response) {
         $scope.cv = response.data;
     });
 });
