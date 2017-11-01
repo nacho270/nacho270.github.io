@@ -10,6 +10,9 @@ app.controller("contentsController", function($scope, $http) {
     $scope.changeModal = function(title, body){
         $("#myModal .modal-title").html(title);
         $("#myModal .modal-body").html(body);
+        $('#myModal pre, #myModal code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
       };
 });
 
