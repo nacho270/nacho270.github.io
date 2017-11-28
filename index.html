@@ -54,7 +54,7 @@
     <div class="scrollable-section" data-section-title="Home">
         <div class="jumbotron">
             <div class="container">
-                <h1>Hello world!</h1>
+                <h1>Hello there!</h1>
                 <p>I'm Ignacio Cicero and this is my personal website where i'll be sharing the things i work with, interests and CV.</p>
                 <div class="tagContainer">
                     <ul class="tags">
@@ -73,18 +73,13 @@
                 <div class="row">
                     <div class="col-md-4" ng-repeat="e in entries">
                         <h2 ng-bind-html="e.title"></h2>
-                        <p ng-bind-html="e.body | cut:true:100:' ...'"></p>
+                        <p ng-bind-html="e.body | cut:true:500:' ...'"></p>
                         <p><a class="btn btn-default" role="button" ng-click="changeModal(e.title, e.body)" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
                     </div>
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <a class="twitter-timeline" data-width="600" data-height="300" href="https://twitter.com/ignaciocicero?ref_src=twsrc%5Etfw">My tweets</a>
+                    <div class="col-md-4">
+                        <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/ignaciocicero?ref_src=twsrc%5Etfw">My tweets</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-                    <div class="col-md-3"></div>
                 </div>
                 <hr />
             </div>

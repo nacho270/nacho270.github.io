@@ -1,22 +1,6 @@
 [
     {
-        "title":"Titulo 1",
-        "body":"body 1"
-    },
-    {
-        "title":"Titulo 2",
-        "body":"body 2"
-    },
-    {
-        "title":"Titulo 3",
-        "body":"body 3"
-    },
-    {
-        "title":"Titulo 4",
-        "body":"body 4"
-    },
-    {
-        "title":"Titulo 5",
-        "body":"body 5"
+        "title":"First data viz project",
+        "body":"Check <a href=\"https://nacho270.github.io/infovis/tp/\" target=\"_blank\">this viz</a> about the football games between Boca and River.<br />This was an assignment for the data-viz course i took during my data science specialization. The main idea was to allow the user to establish its own comparison scenario to visualize the history of games."
     }
 ]
