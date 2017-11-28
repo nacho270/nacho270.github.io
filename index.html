@@ -63,8 +63,7 @@
                         <li class="foot">Football</li>
                         <li class="rock">Rock</li>
                     </ul>
-                </div>
-            </div>
+                </div>            </div>
         </div>
     </div>
     <div id="app" ng-app="contents" ng-controller="contentsController">
@@ -79,6 +78,15 @@
                     </div>
                 </div>
                 <hr />
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <a class="twitter-timeline" data-width="600" data-height="300" href="https://twitter.com/ignaciocicero?ref_src=twsrc%5Etfw">My tweets</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <hr />
             </div>
         </div>
 
@@ -87,7 +95,7 @@
                 <h1 class="sectionTitle">Resume</h1>
                 <div class="row noMarginLeft" ng-repeat="e in cv">
                     <h4 class="jobTitle" ng-bind-html="e.title"></h4>
-                    <p ng-bind-html="e.body"></p>
+                    <p class="jobDescription" ng-bind-html="e.body"></p>
                 </div>
                 <hr />
             </div>
