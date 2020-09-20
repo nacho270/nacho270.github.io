@@ -1,22 +1,30 @@
 [
-    {
-        "title":"JUL '17 - <b><i>NOW</i></b> · SOFTWARE ENGINEER – MERCADOLIBRE, BUENOS AIRES, ARGENTINA.",
-        "body":"Backend developer for MercadoEnvios (shipping). Development of initiatives that improve the user's experience with the product, such as the immediate return of products.<br /><br /><u>Tools:</u> Java SE 8, Grails 1.x y 2.x, Spark Java, JUnit (Mockito and PowerMock), GitHub, Maven, Oracle, MongoDB, Zookeeper, RabbitMQ, Memcached, IntelliJ and Eclispe. Methodology: SCRUM."
-    },
-    {
-        "title":"FEB '10 - <b><i>NOW</i></b> · FREELANCE SOFTWARE DEVELOPER – BUENOS AIRES, ARGENTINA.",
-        "body":"Design and development of a custom ERP for small factory. The system covers the full billing flow, keeps track of each customer's account and monitors production state by tracking work pieces with barcodes.<br /><br /><u>Tools:</u> SVN (now GIT), Java EE/SE, JBoss, Hibernate (JPA), Swing, Jasper Reports, MySQL, Struts2, spring-mvc and Eclipse-ADT (Android)"
-    },
-    {
-        "title":"APR '15 - JUL '17 · SOFTWARE ENGINEER/TECH LEAD – GLOBANT, BUENOS AIRES, ARGENTINA.",
-        "body":"Worked for 2 accounts:<br /><ul><li>J.Walter Thompson:<ul><li>Adding new modules and bug fixing of the application that creates the proper records, email accounts and permissions for new employees.</li><li>Migration of persistence strategy from neo4j to MySQL in an internal social-network for employees.</li><li>Testing automation using selenium.</li></ul><br /><u>Tools:</u> Java 7, Spring/SpringMVC, apache camel, Hibernate, JPA, MySQL, Jenkins, Selenium, Backbone, Git, Maven and JUnit (PowerMock, EasyMock).</li><br /><li>JP Morgan Chase:<ul><li>Architectonic/model design, project setup and development of an application is in charge of recalling asset loans from a customer who lent them to the bank based on sorting and allocation rules.</li></ul><br /><u>Tools:</u> Java 8, Spring-boot, spring-jdbc, Jersey, Oracle, team city, Git (stash), Maven and JUnit (Mockito).</li><br /><li>I was a tutor of a java bootcamp where a group of interns takes a java course containing: Design patterns, maven, TDD, Spring-boot + MVC, MySql and Hibernate.</li></ul>"
-    },
-    {
-        "title":"OCT '13 - APR '15 · SOLUTIONS ENGINEER – ALCATEL-LUCENT, BUENOS AIRES, ARGENTINA.",
-        "body":"<ul><li>Development of integration interfaces for an Alcatel-Lucent EE application with the customer systems: Web services, protocol adapters such as RADIUS.</li><li>Development of a web application for querying user data and configuration</li><br /><u>Tools:</u> AngularJS, Spring-MVC 4.1.2, Hibernate, JPA, Weblogic 10.3.5 and oracle 10i.</ul>"
-    },
-    {
-        "title":"MAR '09 - OCT '13 · SOFTWARE DEVELOPER – CLARIN, BUENOS AIRES, ARGENTINA.",
-        "body":"<ul><li>Development of \"El Gran DT\", an online fantasy football game.</li><li>Development and execution of stress tests with \"The Grinder\" tool using Jython scripts</li><li>In charge of the mobile application project: Service development, requirements negotiation between marketing and the suppliers, issue tracking, testing and setting up the application in the production environment.</li><br /><u>Tools:</u> Java EE, JSP, JBoss 4.2, JavaScript (standard and JQuery), Oracle 9, eclipse, SVN, Maven, Bamboo and JIRA. Methodology: SCRUM.</ul>"
-    }
+  {
+    "title": "SEP '20 - <b><i>NOW</i></b> · VICE PRESIDENT SOFTWARE ENGINEER – J.P. MORGAN, LONDON, UK.",
+    "body": "-"
+  },
+  {
+    "title": "MAY '19 - <b><i>AUG '20</i></b> · SENIOR SOFTWARE ENGINEER – ICON SOLUTIONS, LONDON, UK.",
+    "body": "Development of a message coordinator application that enables instant payments to client banks using reactive programming.<br /><br />Attended to the MongoDB local in September 2019 in London.<br /><br /><u>Tools:</u> Java SE 8, BitBucket, JUnit (mockito), JBehave, Akka, Spring, MongoDB, Maven, Docker and AWS. Methodology: Kanban."
+  },
+  {
+    "title": "JUL '17 - <b><i>MAY '19</i></b> · SOFTWARE ENGINEER – MERCADOLIBRE, BUENOS AIRES, ARGENTINA.",
+    "body": "Backend developer for MercadoEnvios (shipping). Development of initiatives that improve the user's experience with the product, such as the immediate return of products.<br />- Migrated the emails/push notifications from a monolithic codebase to a set of microservices designed from scratch using the new technology stack of the company.<br />- Redesigned the shipping tracking API and migrated to the new technology stack of the company.<br />- Attended to the 2018 Oracle code-one conference in San Francisco.<br /><br /><u>Tools:</u> Java SE 8, Grails 1.x y 2.x, Spark Java, JUnit (Mockito and PowerMock), GitHub, Maven, Oracle, MongoDB, Zookeeper, RabbitMQ, Memcached, IntelliJ and Eclispe. Methodology: SCRUM."
+  },
+  {
+    "title": "FEB '10 - <b><i>MAY '19</i></b> · FREELANCE SOFTWARE DEVELOPER – BUENOS AIRES, ARGENTINA.",
+    "body": "Design and development of a custom ERP for small factory. The system covers the full billing flow, keeps track of each customer's account and monitors production state by tracking work pieces with barcodes.<br /><br /><u>Tools:</u> SVN (now GIT), Java EE/SE, JBoss, Hibernate (JPA), Swing, Jasper Reports, MySQL, Struts2, spring-mvc and Eclipse-ADT (Android)"
+  },
+  {
+    "title": "APR '15 - JUL '17 · SOFTWARE ENGINEER/TECH LEAD – GLOBANT, BUENOS AIRES, ARGENTINA.",
+    "body": "Worked for 2 accounts:<br /><ul><li>J.Walter Thompson:<ul><li>Adding new modules and bug fixing of the application that creates the proper records, email accounts and permissions for new employees.</li><li>Migration of persistence strategy from neo4j to MySQL in an internal social-network for employees.</li><li>Testing automation using selenium.</li></ul><br /><u>Tools:</u> Java 7, Spring/SpringMVC, apache camel, Hibernate, JPA, MySQL, Jenkins, Selenium, Backbone, Git, Maven and JUnit (PowerMock, EasyMock).</li><br /><li>JP Morgan Chase:<ul><li>Architectonic/model design, project setup and development of an application is in charge of recalling asset loans from a customer who lent them to the bank based on sorting and allocation rules.</li></ul><br /><u>Tools:</u> Java 8, Spring-boot, spring-jdbc, Jersey, Oracle, team city, Git (stash), Maven and JUnit (Mockito).</li><br /><li>I was a tutor of a java bootcamp where a group of interns takes a java course containing: Design patterns, maven, TDD, Spring-boot + MVC, MySql and Hibernate.</li></ul>"
+  },
+  {
+    "title": "OCT '13 - APR '15 · SOLUTIONS ENGINEER – ALCATEL-LUCENT, BUENOS AIRES, ARGENTINA.",
+    "body": "<ul><li>Development of integration interfaces for an Alcatel-Lucent EE application with the customer systems: Web services, protocol adapters such as RADIUS.</li><li>Development of a web application for querying user data and configuration</li><br /><u>Tools:</u> AngularJS, Spring-MVC 4.1.2, Hibernate, JPA, Weblogic 10.3.5 and oracle 10i.</ul>"
+  },
+  {
+    "title": "MAR '09 - OCT '13 · SOFTWARE DEVELOPER – CLARIN, BUENOS AIRES, ARGENTINA.",
+    "body": "<ul><li>Development of \"El Gran DT\", an online fantasy football game.</li><li>Development and execution of stress tests with \"The Grinder\" tool using Jython scripts</li><li>In charge of the mobile application project: Service development, requirements negotiation between marketing and the suppliers, issue tracking, testing and setting up the application in the production environment.</li><br /><u>Tools:</u> Java EE, JSP, JBoss 4.2, JavaScript (standard and JQuery), Oracle 9, eclipse, SVN, Maven, Bamboo and JIRA. Methodology: SCRUM.</ul>"
+  }
 ]

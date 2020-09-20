@@ -1,117 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Ignacio Cicero</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/section-scroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="//code.angularjs.org/1.6.4/angular-sanitize.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar bg-primary navbar-fixed-top" role="navigation">
-        <p class="links">
-            <a href="https://github.com/nacho270/" target="_blank" role="button" class="noHover"> <img alt="github" title="gitbhub" src="img/github.ico" />
-            </a>
-            <a href="https://www.linkedin.com/in/icicero/" target="_blank" role="button" class="noHover"> <img alt="twitter" title="twitter" src="img/linkedin.png" />
-            </a>
-            <a href="https://twitter.com/ignaciocicero" target="_blank" role="button"> <img alt="twitter" title="twitter" src="img/twitter.png" class="noHover" />
-            </a>
-        </p>
+      <p class="links">
+        <a
+          href="https://github.com/nacho270/"
+          target="_blank"
+          role="button"
+          class="noHover"
+        >
+          <img alt="github" title="gitbhub" src="img/github.ico" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/icicero/"
+          target="_blank"
+          role="button"
+          class="noHover"
+        >
+          <img alt="twitter" title="twitter" src="img/linkedin.png" />
+        </a>
+        <a
+          href="https://twitter.com/ignaciocicero"
+          target="_blank"
+          role="button"
+        >
+          <img
+            alt="twitter"
+            title="twitter"
+            src="img/twitter.png"
+            class="noHover"
+          />
+        </a>
+      </p>
     </nav>
 
     <!-- MODAL-->
 
     <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- FIN MODAL-->
+    <!-- END MODAL-->
 
     <div class="scrollable-section" data-section-title="Home">
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Hello there!</h1>
-                <p>I'm Ignacio Cicero and this is my personal website where i'll be sharing the things i work with, interests and CV.</p>
-                <div class="tagContainer">
-                    <ul class="tags">
-                        <li class="dev">Programming</li>
-                        <li class="cook">Cooking</li>
-                        <li class="foot">Football</li>
-                        <li class="rock">Rock</li>
-                    </ul>
-                </div>            </div>
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello there!</h1>
+          <p>
+            I'm Ignacio Cicero and this is my personal website where i'll be
+            sharing the things i work with, interests and CV.
+          </p>
+          <div class="tagContainer">
+            <ul class="tags">
+              <li class="dev">Programming</li>
+              <li class="cook">Cooking</li>
+              <li class="foot">Football</li>
+              <li class="rock">Rock</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <div id="app" ng-app="contents" ng-controller="contentsController">
-        <div class="scrollable-section" data-section-title="News">
-            <div class="container">
-                <h1 class="sectionTitle">News</h1>
-                <div class="row">
-                    <div class="col-md-4" ng-repeat="e in entries">
-                        <h2 ng-bind-html="e.title"></h2>
-                        <p ng-bind-html="e.body | cut:true:500:' ...'"></p>
-                        <p><a class="btn btn-default" role="button" ng-click="changeModal(e.title, e.body)" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/ignaciocicero?ref_src=twsrc%5Etfw">My tweets</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                </div>
-                <hr />
+      <div class="scrollable-section" data-section-title="News">
+        <div class="container">
+          <h1 class="sectionTitle">News</h1>
+          <div class="row">
+            <div class="col-md-4" ng-repeat="e in entries">
+              <h2 ng-bind-html="e.title"></h2>
+              <p ng-bind-html="e.body | cut:true:500:' ...'"></p>
+              <p>
+                <a
+                  class="btn btn-default"
+                  role="button"
+                  ng-click="changeModal(e.title, e.body)"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >View details &raquo;</a
+                >
+              </p>
             </div>
+            <div class="col-md-4">
+              <a
+                class="twitter-timeline"
+                data-width="400"
+                data-height="400"
+                href="https://twitter.com/ignaciocicero?ref_src=twsrc%5Etfw"
+                >My tweets</a
+              >
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
+          </div>
+          <hr />
         </div>
+      </div>
 
-        <div class="scrollable-section" data-section-title="Resume">
-            <div class="container">
-                <h1 class="sectionTitle">Resume</h1>
-                <div class="row noMarginLeft" ng-repeat="e in cv">
-                    <h4 class="jobTitle" ng-bind-html="e.title"></h4>
-                    <p class="jobDescription" ng-bind-html="e.body"></p>
-                </div>
-                <hr />
-            </div>
+      <div class="scrollable-section" data-section-title="Resume">
+        <div class="container">
+          <h1 class="sectionTitle">Resume</h1>
+          <div class="row noMarginLeft" ng-repeat="e in cv">
+            <h4 class="jobTitle" ng-bind-html="e.title"></h4>
+            <p class="jobDescription" ng-bind-html="e.body"></p>
+          </div>
+          <hr />
         </div>
+      </div>
     </div>
     <footer>
-        <div class="container">
-            <p>&copy; 2017 Ignacio Cicero</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2017 Ignacio Cicero</p>
+      </div>
     </footer>
 
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/vendor/jquery.section-scroll.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('body').sectionScroll({
-                topOffset: 80
-            });
-        })
+      $(document).ready(function () {
+        $("body").sectionScroll({
+          topOffset: 80,
+        });
+      });
     </script>
-</body>
-
+  </body>
 </html>

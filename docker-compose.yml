@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  web:
+    build: .
+
+    ports:
+      - "8080:80"
+
+    volumes:
+      - .:/usr/share/nginx/html
+
+    stdin_open: true
