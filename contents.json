@@ -1,6 +1,10 @@
 [
     {
-        "title":"First data viz project",
-        "body":"Check <a href=\"https://nacho270.github.io/infovis/tp/\" target=\"_blank\">this viz</a> about the football games between Boca and River.<br />This was an assignment for the data-viz course i took during my data science specialization. The main idea was to allow the user to establish its own comparison scenario to visualize the history of games."
+        "title":"Docker + K8S + helm",
+        "body":"I wrote <a href=\"https://ignaciocicero.medium.com/docker-kubernetes-helm-a-comprehensive-step-by-step-using-java-df83f6780d80\" target=\"_blank\">step-by-step guide</a> about how you can take your app to docker and the kubernetes with the help of helm."
+    },
+    {
+        "title":"First medium article!",
+        "body":"Have a look at <a href=\"https://ignaciocicero.medium.com/alternatives-query-tooling-for-java-27da9822b980\" target=\"_blank\">my first medium articule</a> about the different use cases for JOOQ and a comparisson between them."
     }
 ]
